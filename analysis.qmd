@@ -6,12 +6,14 @@ execute:
   echo: false
 ---
 
-We are measuring how immigration attitudes of voters are affected by exposure to Spanish on a train, which can be affected  by age, and education and as well. The data source is the 2 week Enos survey, studying causal effect of Spanish exposure on immigration attitudes.
+We are measuring how immigration attitudes of voters are affected by exposure to Spanish on a train, which can be affected  by age, and education and as well. The data source is the 2 week Enos survey, studying causal effect of Spanish exposure on immigration attitudes. The commuters in the survey may not be accurately representing the whole population, as the survey is voluntary and those who refuse are left out of the data.
 
 ```{r}
 #| message: false
 library(tidyverse)
 library(primer.data)
+library(tidymodels)
+library(broom)
 trains
 ```
 
